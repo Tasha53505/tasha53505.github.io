@@ -18,9 +18,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-}
+
 .navContainer {
   background: blueviolet;
 
