@@ -7,7 +7,10 @@
     <title>Tasha's Portfolio</title>
   </head>
   <body>
-      <header>Welcome to My Portfolio</header>
+    <div class="headerContainer">
+        <header class="headerBanner">Welcome to My Portfolio</header>
+
+    </div>
   
       <nav>
           <a href="#about-me">About Me</a>
@@ -56,6 +59,7 @@
   
   
   <style>
+ 
           body {
               font-family: Arial, sans-serif;
               margin: 0;
@@ -65,15 +69,26 @@
           }
 
 
+          .headerContainer {
+            background-color: #e8d9e0;
+          }
+
+
+          .headerBanner {
+            background: url(./images/Banner.jpg);
+              background-repeat: none;
+              padding: 8%;
+              margin-left: 28%;
+          }
   
           header {
               /* background-color: #ffcccb; */
-              background: url(./images/Banner.jpg);
-              background-repeat: none;
-              padding: 25%;
+              background-color: #e8d9e0;
               text-align: center;
               font-size: 2em;
+              font-weight: 700;
               color: #fff;
+              margin-right: auto;
           }
   
           nav {
