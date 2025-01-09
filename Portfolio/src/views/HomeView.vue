@@ -34,7 +34,7 @@
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out at:</p>
         <ul>
-            <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>Email: <a href="mailto:ncarr63@gmail.com">ncarr63@gmail.com</a></li>
             <li>Phone: (123) 456-7890</li>
             <li>Social Media: <a href="#" target="_blank">LinkedIn</a></li>
             <li>Github: <a href="#" target="_blank">Github</a></li>
