@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/tasha53505.github.io/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasha's Portfolio</title>
   </head>
   <body>
     <div class="headerContainer">
-        <header class="headerBanner">Welcome to My Portfolio</header>
-
+        <div class="headerBanner">
+            <header class="headerWelcome">Tasha Carr - Software Developer</header>
+        </div>
     </div>
   
       <nav>
@@ -20,10 +24,19 @@
   
       <section id="about-me" class="about-me">
           <h2>About Me</h2>
-          <img src="" alt="Profile Photo">
-          <p>Hello! I'm Tasha
+          <img src="./images/ProfilePic.jpg" alt="Profile Photo">
+          <p>
 
-            This Portfolio is kept relatively clean and simple as to easily get around to my work !
+            Hi there !  My name is Tasha and I'm 21 years old. <br><br>
+            I am incredibly passionate about web development and have been ever since I wrote my first line of code, and thought about how amazing it was to type &lt;h2&gt;&lt;/h2&gt;
+            and have words appear on a website !
+              <br><br>  
+            I have a degree in Computer Science, majoring in Software Engineering. 
+            I am incredibly passionate about Web Development and am currently finishing up my contract work doing automated API testing. <br><br>
+            I have experience as a Technical helpdesk position (I was doing part-time work for 3 years alongside university). 
+            Now that is over with and my contract is finishing, I am looking for work between February until July 2025.<br><br>
+
+            This Portfolio is kept relatively clean and simple as to easily get around to showcasing my work and learn about me !
           </p>
       </section>
   
@@ -31,12 +44,21 @@
           <h2>My Work</h2>
           <div class="work-item">
               <h3>Tararua All Breeds</h3>
-              <p>Brief description of the project.</p>
+              <a href="https://dogtraining.org.nz" class="clickableImg"> 
+              <img src="./images/Allbreeds.png" alt="DogTrainingShowcaseSite" class="showcaseImage">
+              </a>
+              <p>Tararua All Breeds is a dog training company, I successfully transformed their initial website from a conventional online brochure appearance to a responsive, aesthetically pleasing, and SEO-optimized platform. The revamped site boasts enhanced functionality, including user-friendly features such as class registration, membership subscription, seamless communication with instructors through WhatsApp, and an exclusive members-only section.
+            </p>
               <a href="https://dogtraining.org.nz/" target="_blank">See Live</a>
           </div>
+          <hr>
           <div class="work-item">
               <h3>Cafe Emineem</h3>
-              <p>Brief description of the project.</p>
+              <a href="https://cafeeminem.co.nz/">
+              <img src="./images/CafeEm.png" alt="CafeEminemShowcase" class="showcaseImage">
+            </a>
+
+              <p>  I implemented a delivery system for their food with a plugin called Orderable. I then figured out how we could hook it up to their receipt printer so that whenever an order came through, it would automatically print out the order. I redesigned their website to be engaging and intuitive to use.               .</p>
               <a href="https://cafeeminem.co.nz/" target="_blank">See Live</a>
           </div>
       </section>
@@ -62,9 +84,14 @@
   
   
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  
+        * {
+            font-family: "Fira Sans Condensed", serif;
+            
+        }
           body {
-              font-family: Arial, sans-serif;
+              font-family: fira-sanscondensed-regular;
               margin: 0;
               padding: 0;
               background-color: #ffe4e1;
@@ -74,26 +101,41 @@
 
           .headerContainer {
             background-color: #e8d9e0;
+            color: white;
+            font-size: large;
+           
           }
 
 
           .headerBanner {
-            background: url(./images/Banner.jpg);
-              background-repeat: none;
-              padding: 8%;
-              margin-left: 28%;
+            background: url(./images/banner\ Overlay.jpg);
+            background-repeat: none;
+            padding: 8%;
           }
   
           header {
               /* background-color: #ffcccb; */
-              background-color: #e8d9e0;
+              /* background-color: #e8d9e0; */
               text-align: center;
               font-size: 2em;
               font-weight: 700;
-              color: #fff;
+              /* color: #fff; */
               margin-right: auto;
           }
   
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;       
+     
+        }
+
+        .showcaseImage {
+            width: 100%;
+        }
+
+    
           nav {
               display: flex;
               justify-content: center;
@@ -103,6 +145,7 @@
   
           nav a {
               margin: 0 15px;
+              font-size: 25px;
               text-decoration: none;
               color: #fff;
               font-weight: bold;
@@ -140,11 +183,17 @@
           .work-item a {
               display: inline-block;
               margin-top: 5px;
-              padding: 5px 10px;
+              padding: 5px 5px;
               background-color: #ff69b4;
+              font-size: 15px;
               color: #fff;
               text-decoration: none;
               border-radius: 5px;
+          }
+
+  
+          .work-item h3 {
+            font-size: 30px;
           }
   
           .work-item a:hover {
