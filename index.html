@@ -26,7 +26,7 @@
           <h2>About Me</h2>
           <img src="./images/ProfilePic.jpg" alt="Profile Photo">
           <p>
-
+            <a href="cv.pdf" class="button" target="_blank">Open My CV</a>  <br> <br>
             Hi there !  My name is Tasha and I'm 21 years old. <br><br>
             I am incredibly passionate about web development and have been ever since I wrote my first line of code, and thought about how amazing it was to type &lt;h2&gt;&lt;/h2&gt;
             and have words appear on a website !
@@ -58,10 +58,24 @@
               <img src="./images/CafeEm.png" alt="CafeEminemShowcase" class="showcaseImage">
             </a>
 
-              <p>  I implemented a delivery system for their food with a plugin called Orderable. I then figured out how we could hook it up to their receipt printer so that whenever an order came through, it would automatically print out the order. I redesigned their website to be engaging and intuitive to use.               .</p>
+              <p>  I implemented a delivery system for their food with a plugin called Orderable. I then figured out how we could hook it up to their receipt printer so that whenever an order came through, it would automatically print out the order. I redesigned their website to be engaging and intuitive to use.               </p>
               <a href="https://cafeeminem.co.nz/" target="_blank">See Live</a>
           </div>
+
+          
+      <hr>
+      <div class="work-item">
+          <h3>University Capstone Project - LMS Music Player</h3>
+          <a href="https://github.com/Tasha53505/159.356-capstone-project-group">
+          <img src="./images/LMS.png" alt="LMSMusic" class="showcaseImage">
+        </a>
+
+          <p> As the team leader for our university capstone project, I coordinated the development of a Learning Management System (LMS) featuring a built-in music player. I set up a GitHub repository for version control, a Jira board for task management, and a Discord server to keep our sponsor and supervisor informed. Weekly Zoom meetings with our sponsor ensured alignment, and I created a comprehensive task list, dividing responsibilities and setting deadlines with task ETAs. I managed the "Settings" section by reviewing features, delegating tasks, and integrating them into our timeline while overseeing the music player's design and functionality. Despite setbacks, such as a teammate becoming unresponsive, I addressed issues directly, maintained accountability, and kept the project on track. This experience sharpened my leadership and collaboration skills, resulting in the successful delivery of a functional LMS with an integrated music player.</p>
+          <a href="https://cafeeminem.co.nz/" target="_blank">See Live</a>
+      </div>
       </section>
+
+
   
       <section id="contact-me" class="contact-me">
           <h2>Contact Me</h2>
@@ -199,6 +213,23 @@
           .work-item a:hover {
               background-color: #ff1493;
           }
+
+
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 18px;
+                color: white;
+                background-color: #ff69b4;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .button:hover {
+            background-color: #ff1493;
+            }
+
   
           footer {
               text-align: center;
@@ -207,6 +238,9 @@
               color: #fff;
               margin-top: 20px;
           }
+
+
+
       </style>
   </body>
 </html>
